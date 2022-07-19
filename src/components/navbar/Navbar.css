@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    background-color: #6f1111 ;
+    padding: 1vw 1.5vw;
+    border-bottom: 2px solid #3D0909;
+    box-shadow: 0 0 35px #000;
+}
+.menu .logo img{
+    width: 80px;
+    transition: 500ms;
+}
+.menu .botonera{
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+}
+.menu .botonera button{
+    width: 10%;
+    height: 30px;
+    margin-top: calc((80px - 30px) / 3);
+    background-color: transparent;
+    border: 0px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    transition: 500ms all;
+}
+
+.menu .botonera button:hover{
+    border-bottom: 2px solid #fff;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.menu .logo img:hover{
+    transform: rotate(360deg) scale(1.25);
+}
