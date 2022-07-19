@@ -1,10 +1,11 @@
-import './Navbar.css'
+import './Navbar.css';
+import CartWidget from '../CartWidget/CartWidget';
 
 const Navbar = () => {
     return(
         <nav className="menu">
         <div className="logo">
-            <img src="https://i.ibb.co/LzjQSY1/chuchesportslogo.png" />
+            <img src="https://i.ibb.co/LzjQSY1/chuchesportslogo.png" alt="logo" />
         </div>
         <div className="botonera">
         <button>Selecciones</button>
@@ -16,6 +17,8 @@ const Navbar = () => {
         <button>La Liga</button>
         <button>Otros</button>
         </div>
+        <CartWidget />
+
     </nav>
     )
 }

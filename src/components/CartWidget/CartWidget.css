@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+
+.cart{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.cart img{
+    height: 40px;
+    transition: 500ms;
+}
+.cart p{
+    line-height: 22px;
+    color: #fff;
+    width: 22px;
+    height: 22px;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: 'Mukta', sans-serif;
+    margin: 22px 0 0 -10px;
+    border-radius: 50%;
+    z-index: 1;
+    transition: 600ms;
+    background-color: #6f1111;
+}
+
+
