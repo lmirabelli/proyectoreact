@@ -1,0 +1,77 @@
+.ItemUnitario{
+    width: 90%;
+    margin: 20px 5% 30px 5%;
+    display: flex;
+    background-color: #f3f3f3;
+    padding: 15px;
+    border: 3px solid #6f1111;
+}
+
+.ItemUnitario img{
+    border: 1px solid #ababab;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #000;
+    height: 400px;
+}
+
+.DescripcionProducto {
+    width: 100%;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.DescripcionProducto H2 {
+    padding: 5px 0;
+    border-top: 1px solid #6f1111;
+    border-bottom: 1px solid #6f1111;
+    color: #6f1111;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.DescripcionProducto p{
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.DescripcionProducto .muchas{
+    background-color: #009314;
+    border: 2px solid #005d0c;
+    box-shadow: 0 0 10px #009314;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    border-radius: 15px;
+    margin-bottom: 60px;
+}
+
+.DescripcionProducto .pocas{
+    background-color: #6f1111;
+    border: 2px solid #440a0a;
+    box-shadow: 0 0 10px #6f1111;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    border-radius: 15px;
+    margin-bottom: 60px;
+}
+
+.DescripcionProducto .botonCarrito {
+    padding: 10px 50px;
+    background: #fff;
+    color: #009314;
+    font-weight: 900;
+    border: 1px solid #009314;
+    text-decoration: none;
+    transition: 450ms all;
+}
+
+.DescripcionProducto .botonCarrito:hover{
+    background: #009314;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #005d0c;
+    box-shadow: 0 0 10px #000;
+    border-radius: 30px;
+}

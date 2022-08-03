@@ -1,15 +1,15 @@
 import './ItemCard.css'
+import { Link } from 'react-router-dom'
 
-const Item = ({product}) => {
-    console.log(product.descripcion)
+const Item = ({id, precio, img, descripcion}) => {
     return (
         <div className='card'>
-            <img src={product.img} alt={''} />
+            <img src={img} alt={''} />
             <div>
-            <p className='tituloCasaca'>{product.descripcion} </p>
-            <p className='money'>{product.precio} €</p>
+            <p className='tituloCasaca'>{descripcion} </p>
+            <p className='money'>{precio} €</p>
             </div>
-            <button>mas detalles</button>
+            <Link to={`/casaca/${id}`} className="detalles">mas detalles</Link>
         </div>
     )
 }

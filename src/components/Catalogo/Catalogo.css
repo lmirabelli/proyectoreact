@@ -3,3 +3,12 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+.tituloCatalogo {
+    box-shadow: 0 10px 35px #000;
+    width: 100vw;
+    background: #6f1111;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    text-transform: uppercase;
+}

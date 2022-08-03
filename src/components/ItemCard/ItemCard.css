@@ -3,8 +3,9 @@
 .card{
     width: 18vw;
     height: 300px;
-    margin: 3px 1%;
+    margin: 7px 1%;
     border: 1px solid #050051;
+    box-shadow: 0 0 10px #050051;
 }
 .card img{
     width: 100%;
@@ -35,4 +36,18 @@
     width: 25%;
     color: #af7500;
     font-weight: 800;
+}
+
+.detalles{
+    background-color: #050051;
+    color: #fff;
+    font-weight: 600;
+    padding: 3px;
+    text-decoration: none;
+    transition: 350ms;
+}
+.detalles:hover{
+    background-color: #009414;
+    padding: 3px 16px;
+    box-shadow: 0 0 10px #000;
 }

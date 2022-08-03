@@ -9,7 +9,7 @@ const ProdCounter = ({ stock, onAdd}) => {
 
     const increment = () => { counter < stock && setCounter(counter + 1) }
 
-    const decrement = () => { counter > 0 && setCounter(counter - 1) }
+    const decrement = () => { counter > 1 && setCounter(counter - 1) }
 
     return (
         <div className='contador'>

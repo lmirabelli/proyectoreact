@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-around;
 }
-.menu .botonera button{
+.menu .botonera .botonNavbar{
     width: 10%;
     height: 30px;
     margin-top: calc((80px - 30px) / 3);
@@ -29,9 +29,10 @@
     color: #fff;
     border-bottom: 2px solid transparent;
     transition: 500ms all;
+    text-decoration: none;
 }
 
-.menu .botonera button:hover{
+.menu .botonera .botonNavbar:hover{
     border-bottom: 2px solid #fff;
     transform: scale(1.2);
     cursor: pointer;
