@@ -1,71 +1,40 @@
-# Getting Started with Create React App
+# Proyecto de React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Instalacion de React
 
-## Available Scripts
+se instalo react desde la consola con npx create-react-app y el nombre de la aplicacion.
+para inicializarlo se hace desde la consola, hay que ir a la ruta donde se encuentra el package.json de la aplicacion y accionar el comando npm start
 
-In the project directory, you can run:
+## Tabajando en el proyecto
 
-### `npm start`
+He creado una app que simula una tienda de venta de camisetas de futbol, donde he creado varios componentes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Navbar
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+En el componente Navbar se creo todo el menu para la interaccion con la app, la cual cuenta con botones para ir filtrando la categoria y asi brindar al usuario una mejor busqueda, tambien cuenta con el carrito de compras que por el momento solo esta de forma figurativa
 
-### `npm test`
+### CartWidget
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+En el componente CartWidget es donde esta el carrito con todos los productos agregados que por el momento es inexistente y solo muestra la imagen del carrito con un numero 10 que simula una cantidad de productos que por el momento es estatico
 
-### `npm run build`
+### Catalogo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+En el componente Catalogo se muestra todos los productos que estan en el archivo casacas.js que simula una API, salvo que la busqueda este filtrada entonces este componente muestra el resultado de ese filtro
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Contador
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+En este componente es un contador standard con 3 botones para sumar 1 al valor o restar 1 a ese mismo valor con un valor minimo de 1 y  un maximo de 15, en un futuro este contador se transformara en la cuenta del carrito de cuantos productos lleva dentro
 
-### `npm run eject`
+### ItemPage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+en este componente se muestra en detalles una camiseta elegida por el usuario la cual se compone de un boton para volver al catalogo y el componente ItemUnit que lo describire a continuacion
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ItemUnit
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+en este componente es complementario al ItemPage ya que este dentro lleva todos aquellos detalles de la camiseta el cual usuario a elegido, de la cual cuenta con una imagen de la misma, el nombre del club o pais, la marca de la camiseta, el precio en Euro y pesos argentinos con un valor al cambio estatico en 310, pensando en un futuro darle un valor dinamico
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### App.js
 
-## Learn More
+por ultimo el archivo App.js, el componente padre de todos los componentes es el que da forma a toda la app.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# proyectoreact" 
