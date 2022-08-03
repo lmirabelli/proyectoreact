@@ -160,6 +160,15 @@ const products = [
         stock: 40,
         descripcion: 'Zamalek',
         marca:'Macron'
+    },
+    {
+        id: '19',
+        precio: '61',
+        categoria: 'seleccion',
+        img: 'https://i.ibb.co/7C4w1x9/SMA.jpg',
+        stock: 6,
+        descripcion: 'San Marino',
+        marca:'Macron'
     }
 ]
 export const stockCamisetas = () => {
