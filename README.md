@@ -1,5 +1,9 @@
 # Proyecto de React
 
+## MP4 de l ecommerse
+
+https://youtu.be/A-XuHo1Wmfo
+
 ## Instalacion de React
 
 se instalo react desde la consola con npx create-react-app y el nombre de la aplicacion.
