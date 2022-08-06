@@ -10,7 +10,7 @@ import ItemUnitConteiner from './components/ItemPage/ItemPage';
 
 function App() {
   const handleOnAdd = (quant) => {
-    console.log(`Se agregó: ${quant} productos`)
+    quant > 0 && console.log(`Se agregó: ${quant} productos`);
   }
 
   return (
