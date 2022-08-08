@@ -11,7 +11,8 @@
     border: 1px solid #ababab;
     border-radius: 12px;
     box-shadow: 0 0 15px #000;
-    height: 400px;
+    height: 520px;
+    max-width: 450px;
 }
 
 .DescripcionProducto {

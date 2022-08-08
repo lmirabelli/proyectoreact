@@ -4,8 +4,8 @@ import './Contador.css'
 
 
 
-const ProdCounter = ({ stock, onAdd}) => {
-    const [counter, setCounter] = useState(0)
+const ProdCounter = ({ stock = 0, initial = 1, onAdd}) => {
+    const [counter, setCounter] = useState(initial)
 
     const increment = () => { counter < stock && setCounter(counter + 1) }
 
@@ -17,7 +17,7 @@ const ProdCounter = ({ stock, onAdd}) => {
             <div className='botonera'>
             <button onClick={decrement}> -1</button>
             <button onClick={increment}> +1</button>
-            <button onClick={() => onAdd(counter)}>ADD</button>
+            <button onClick={() => onAdd(counter)}>Agregar</button>
             </div>
         </div>
 

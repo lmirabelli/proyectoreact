@@ -2,6 +2,8 @@ import './ItemCard.css'
 import { Link } from 'react-router-dom'
 
 const Item = ({id, precio, img, descripcion}) => {
+
+
     return (
         <div className='card'>
             <img src={img} alt={''} />
