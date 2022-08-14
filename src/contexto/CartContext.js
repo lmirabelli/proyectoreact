@@ -4,10 +4,10 @@ const CartContext = createContext();
 
 export const CartContextProvider = ({ children }) => {
     const [cart, setCart] = useState([])
-    console.log(cart)
     
     const agregarItem = (ProdAdd) => {
         if(!inCart(ProdAdd.id)){
+            console.log({ProdAdd})
             setCart([...cart, ProdAdd])
         }else{
             const cartUpdate = cart.map(prod => {
@@ -62,6 +62,20 @@ export const CartContextProvider = ({ children }) => {
         })
         return precioTotal
     }
+
+//     const carritoPage = () => {
+
+//         cart.forEach(prod => {
+//             console.log(prod)
+//             <>
+//             <div></div>
+//             </>
+//         }
+//             )
+//     }
+//   carritoPage()
+
+
 
     const cantProduct = (id) => {
         const producto = cart.find(prod => prod.id === id)

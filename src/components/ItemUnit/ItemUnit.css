@@ -36,6 +36,24 @@
     padding: 10px 0;
 }
 
+.DescripcionProducto a{
+    font-size: 20px;
+    padding: 10px 0;
+    color: #fff;
+    background-color:#6f1111;
+    text-decoration: none;
+    padding: 12px;
+    line-height: 44px;
+    border: 3px solid #fff;
+    transition: all 1s ease 0.3s;
+}
+
+.DescripcionProducto a:hover{
+    background-color: #fff;
+    color: #6f1111;
+    border: 3px solid #6f1111;
+}
+
 .DescripcionProducto .muchas{
     background-color: #009314;
     border: 2px solid #005d0c;

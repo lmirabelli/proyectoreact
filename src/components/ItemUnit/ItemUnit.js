@@ -16,7 +16,7 @@ const ItemUnit = ({ id, descripcion, img, precio, marca, stock }) => {
         setQuantityToAdd(quantity)
 
         const agregarProducto = {
-            id, marca, precio, quantity
+            id, marca, precio, quantity, descripcion, img
         }
 
         agregarItem(agregarProducto)
