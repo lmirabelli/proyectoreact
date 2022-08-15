@@ -1,9 +1,10 @@
 import './ItemPage.css'
 import { useState, useEffect } from 'react'
-import { getProductById } from '../../casacas'
 import ItemUnit from '../ItemUnit/ItemUnit'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import { doc, getDoc } from 'firebase/firestore'
+import { database } from '../../services/firebase'
 
 const ItemUnitContainer = () => {
     const [product, setProduct] = useState()
@@ -11,15 +12,13 @@ const ItemUnitContainer = () => {
     const { shirtId } = useParams()
 
     useEffect(() => {
-        getProductById(shirtId)
-        .then(product => {
-            setProduct(product)
-        })
-        .catch(error => {
-            console.log(error)
-        })
+        getDoc(doc(database, 'products', shirtId)).then(Response => {
+            const dataShirt = Response.data()
+            const impoShirt = {id: Response.id, ...dataShirt}
+            setProduct(impoShirt)
+        }).catch(error => console.log(error))
 
-    },[])
+    },[shirtId])
 
     return(
         <div className='containerItem'>

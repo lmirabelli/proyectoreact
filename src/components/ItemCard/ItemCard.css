@@ -6,6 +6,11 @@
     margin: 7px 1%;
     border: 1px solid #050051;
     box-shadow: 0 0 10px #050051;
+    transition: box-shadow 350ms ;
+}
+.card:hover{
+    box-shadow: 0 0 25px #6f1111;
+    border: 1px solid #6f1111;
 }
 .card img{
     width: 100%;

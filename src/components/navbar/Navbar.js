@@ -9,6 +9,7 @@ const Navbar = () => {
             <img src="https://i.ibb.co/LzjQSY1/chuchesportslogo.png" alt="logo" />
         </div>
         <div className="botonera">
+            <Link to="/" className='botonNavbar'>Inicio</Link>
         <Link to="/cat/seleccion" className='botonNavbar'>Selecciones</Link>
         <Link to="/cat/primeraArgentina" className='botonNavbar'>Primera A</Link>
         <Link to="/cat/ascenso" className='botonNavbar'>Ascenso</Link>

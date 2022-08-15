@@ -14,7 +14,7 @@
     transition: 500ms;
 }
 .menu .botonera{
-    width: 65%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
 }
