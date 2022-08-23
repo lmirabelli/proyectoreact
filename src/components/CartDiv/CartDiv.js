@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 
 const CartDiv = () =>  {
     
-    const { cart, removeItem, clearCart, cantidad, totalCash } = useContext(CartContext)
+    const { cart, removeItem, clearCart, quantityProduct, totalCash } = useContext(CartContext)
 
-    let prodInCart = cantidad()
-    let compraTotal = totalCash()
+    let prodInCart = quantityProduct()
+    let totally = totalCash()
     console.log(prodInCart)
 
 
@@ -34,12 +34,12 @@ const CartDiv = () =>  {
           <div className='divCash'>{prod.precio} €</div>
           <div className='divCash'>{prod.precio * prod.quantity} €</div>
           <div className='divCash'>AR$ {(prod.precio * prod.quantity*310)}</div>
-          <button onClick={() => removeItem(prod.id)}>remover</button>
+          <button onClick={() => removeItem(prod.id)} >remover</button>
           </div>)}
           <div className='pieCarrito'>
           {prodInCart > 0 ? <button onClick={() => clearCart()}>Vaciar Carrito</button> : <Link to="/">Volver al Catalogo</Link>}
           <div> Cantidad de Productos: {prodInCart} {prodInCart === 1 ? 'Camiseta' : 'Camisetas'}</div>
-          <div> Total de Compra: {compraTotal} € / AR$ {compraTotal * 310}</div>
+          <div> Total de Compra: {totally} € / AR$ {totally * 310}</div>
           <Link to="/check">Finalizar Compra</Link>
           </div>
       </div>

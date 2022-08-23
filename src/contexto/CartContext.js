@@ -5,9 +5,8 @@ const CartContext = createContext();
 export const CartContextProvider = ({ children }) => {
     const [cart, setCart] = useState([])
     
-    const agregarItem = (ProdAdd) => {
+    const addItem = (ProdAdd) => {
         if(!inCart(ProdAdd.id)){
-            console.log({ProdAdd})
             setCart([...cart, ProdAdd])
         }else{
             const cartUpdate = cart.map(prod => {
@@ -39,40 +38,39 @@ export const CartContextProvider = ({ children }) => {
         return cart.some(prod => prod.id === id)
     }
 
-    const cantidad = () => {
+    const quantityProduct = () => {
 
-        let suma = 0;
+        let qtProduct = 0;
 
 
         cart.forEach(prod => {
-            suma += prod.quantity
+            qtProduct += prod.quantity
 
         })
 
-        return suma
+        return qtProduct
     }
 
     const totalCash = () => {
 
-        let precioTotal = 0;
+        let totalAmount = 0;
 
         cart.forEach(prod => {
-            precioTotal += parseInt(prod.precio) * prod.quantity
-            console.warn(precioTotal)
+            totalAmount += parseInt(prod.precio) * prod.quantity
         })
-        return precioTotal
+        return totalAmount
     }
 
 
 
-    const cantProduct = (id) => {
-        const producto = cart.find(prod => prod.id === id)
+    const searchProduct = (id) => {
+        const product = cart.find(prod => prod.id === id)
 
-        return producto?.quantity
+        return product?.quantity
     }
     return (
 
-        <CartContext.Provider value={{ cart, agregarItem, cantidad, totalCash, inCart, removeItem, clearCart, cantProduct}}>
+        <CartContext.Provider value={{ cart, addItem, quantityProduct, totalCash, inCart, removeItem, clearCart, searchProduct}}>
             { children }
             </CartContext.Provider>
     )

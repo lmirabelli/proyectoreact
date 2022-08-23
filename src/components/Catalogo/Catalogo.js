@@ -16,15 +16,15 @@ const CatalogoCasacas = () => {
     // FILTRO EN EL TITULO DE LAS CATEGORIAS
 
 
-    let FiltroTitulo = categoryId ? categoryId : 'Todas las camisetas';
-    FiltroTitulo = FiltroTitulo.replace('primeraArgentina','Primera Argentina')
-    FiltroTitulo = FiltroTitulo.replace('seleccion','Selecciones Nacionales')
-    FiltroTitulo = FiltroTitulo.replace('premier','Premier League')
-    FiltroTitulo = FiltroTitulo.replace('laliga','La Liga española')
-    FiltroTitulo = FiltroTitulo.replace('ascenso','Ascenso del futbol argentino')
-    FiltroTitulo = FiltroTitulo.replace('ligue','Ligue 1 de Francia')
-    FiltroTitulo = FiltroTitulo.replace('otros','Resto del mundo')
-    FiltroTitulo = FiltroTitulo.replace('serieA','Serie A italiana')
+    let titleFilter = categoryId ? categoryId : 'Todas las camisetas';
+    titleFilter = titleFilter.replace('primeraArgentina','Primera Argentina')
+    titleFilter = titleFilter.replace('seleccion','Selecciones Nacionales')
+    titleFilter = titleFilter.replace('premier','Premier League')
+    titleFilter = titleFilter.replace('laliga','La Liga española')
+    titleFilter = titleFilter.replace('ascenso','Ascenso del futbol argentino')
+    titleFilter = titleFilter.replace('ligue','Ligue 1 de Francia')
+    titleFilter = titleFilter.replace('otros','Resto del mundo')
+    titleFilter = titleFilter.replace('serieA','Serie A italiana')
 
     // -----------------------------------------
 
@@ -32,10 +32,10 @@ const CatalogoCasacas = () => {
 
     useEffect(() => {
 
-            const filtroCatalogo = !categoryId ? collection(database, 'products') : query(collection(database, 'products'), where('categoria','==',categoryId))
+            const categoryFilter = !categoryId ? collection(database, 'products') : query(collection(database, 'products'), where('categoria','==',categoryId))
             
            
-            getDocs(filtroCatalogo).then( response => {
+            getDocs(categoryFilter).then( response => {
             const impoProducts = response.docs.map(doc => {
                 const impoData = doc.data()
                 return {id: doc.id, ...impoData}
@@ -63,7 +63,7 @@ const CatalogoCasacas = () => {
 
     return (
         <div className='expo'>
-            <h1 className='tituloCatalogo'>{ FiltroTitulo }</h1>
+            <h1 className='tituloCatalogo'>{ titleFilter }</h1>
             {products.map(prod => <Item key={prod.id} {...prod} />)}
         </div>
     )
