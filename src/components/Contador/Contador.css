@@ -16,9 +16,9 @@ h1{
 }
 .botonera{
     width: 50%;
+    padding-bottom: 15px;
 }
 .contador button{
-    width: 30%;
     height: 20%;
     margin: 25% 3px;
     color: #fff;
@@ -26,5 +26,11 @@ h1{
     background-color: #6f1111;
     border: 1px solid #fff;
 
+}
+.add{
+    width: 50%;
+}
+.boton-contador{
+    width: 30%;
 }
 

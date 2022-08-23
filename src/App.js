@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemUnitConteiner from './components/ItemPage/ItemPage';
 import CartDiv from './components/CartDiv/CartDiv';
 import { CartContextProvider } from './contexto/CartContext';
+import CheckData from './components/Check/Check';
 
 
 
@@ -25,6 +26,7 @@ function App() {
               <Route path='/' element={<CatalogoCasacas/>} />
               <Route path='/cat/:categoryId' element={<CatalogoCasacas/>} />
               <Route path='/casaca/:shirtId' element={<ItemUnitConteiner />} />
+              <Route path='/check' element={<CheckData />} />
             </Routes>
       </BrowserRouter>
       </CartContextProvider>

@@ -1,0 +1,40 @@
+.formulario{
+    display: flex;
+    width: 45%;
+    border: 2px solid #6f1111;
+    background-color: #ddd;
+    margin: 15px auto;
+    padding: 20px 0;
+}
+h1,.formulario form,.formulario form div{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.formulario form label, .formulario form input{
+width: 45%;
+margin: 10px 0;
+}
+
+
+.check{
+    width: 100%;
+    text-align: center;
+}
+
+.check h1{
+    width: 100%;
+}
+
+.noData{
+    font-size: 22px;
+    font-weight: 600;
+    background-color: #6f1111;
+    width: 35%;
+    color: #ddd;
+    position: fixed;
+    z-index: 1;
+    top: 450px;
+    margin-left: 50px;
+}

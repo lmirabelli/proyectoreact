@@ -11,6 +11,8 @@ const CatalogoCasacas = () => {
 
     const  { categoryId } = useParams()
 
+
+
     // FILTRO EN EL TITULO DE LAS CATEGORIAS
 
 

@@ -1,8 +1,12 @@
 # Proyecto de React
 
-## MP4 de l ecommerse
+## MP4 de la ecommerce (mitad de Proyecto)
 
 https://youtu.be/A-XuHo1Wmfo
+
+## MP4 de la ecommerce (Proyecto Final)
+
+https://youtu.be/3yMdDR4D_dI
 
 ## Instalacion de React
 
@@ -36,6 +40,14 @@ en este componente se muestra en detalles una camiseta elegida por el usuario la
 ### ItemUnit
 
 en este componente es complementario al ItemPage ya que este dentro lleva todos aquellos detalles de la camiseta el cual usuario a elegido, de la cual cuenta con una imagen de la misma, el nombre del club o pais, la marca de la camiseta, el precio en Euro y pesos argentinos con un valor al cambio estatico en 310, pensando en un futuro darle un valor dinamico
+
+### CardDiv
+
+en este componente se muestra el carrito desglosado con la cantidad de cada producto, una imagen del mismo, el precio unitario en Euros y el subtotal tambien en Euros y Pesos Argentinos, con la posibilidad de remover items por separado y al final de la lista se encuentra un banner con datos como la cantidad total de articulos y el total a pagar, tambien cuenta con un boton para poder eliminar todos los productos al mismo tiempo y otro boton para finalizar la orden y pasar al componente check.
+
+### Check
+
+en este componente contiene un formulario donde se van a poner los datos del comprador y donde hay un pequeño desglose de los productos y el total a pagar, con un boton llamado generar orden la cual procesa la orden en cuestion, checkea el stock de los productos, en el caso que todos los productos esten en stock, se descontaran la cantidad de la base de datos y se le muestra al usuario el codigo de compra y debajo un boton para volver al catalogo y en caso de que 1 o mas productos no hay en stock se le mostrara al usuario un cartel detallando cuales son los productos que no pueden procesarse, con un boton que lo redirigira al carrito nuevamente para que pueda removerlos.
 
 ### App.js
 

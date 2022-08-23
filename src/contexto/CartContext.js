@@ -63,18 +63,6 @@ export const CartContextProvider = ({ children }) => {
         return precioTotal
     }
 
-//     const carritoPage = () => {
-
-//         cart.forEach(prod => {
-//             console.log(prod)
-//             <>
-//             <div></div>
-//             </>
-//         }
-//             )
-//     }
-//   carritoPage()
-
 
 
     const cantProduct = (id) => {

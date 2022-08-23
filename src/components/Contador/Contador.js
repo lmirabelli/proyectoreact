@@ -15,9 +15,9 @@ const ProdCounter = ({ stock = 0, initial = 1, onAdd}) => {
         <div className='contador'>
             <h1>{counter}</h1>
             <div className='botonera'>
-            <button onClick={decrement}> -1</button>
-            <button onClick={increment}> +1</button>
-            <button onClick={() => onAdd(counter)}>Agregar</button>
+            <button onClick={decrement} className='boton-contador'> -1</button>
+            <button onClick={increment} className='boton-contador'> +1</button>
+            <button onClick={() => onAdd(counter)} className='add'>Agregar</button>
             </div>
         </div>
 

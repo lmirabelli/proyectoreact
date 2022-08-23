@@ -40,6 +40,7 @@ const CartDiv = () =>  {
           {prodInCart > 0 ? <button onClick={() => clearCart()}>Vaciar Carrito</button> : <Link to="/">Volver al Catalogo</Link>}
           <div> Cantidad de Productos: {prodInCart} {prodInCart === 1 ? 'Camiseta' : 'Camisetas'}</div>
           <div> Total de Compra: {compraTotal} € / AR$ {compraTotal * 310}</div>
+          <Link to="/check">Finalizar Compra</Link>
           </div>
       </div>
     )
